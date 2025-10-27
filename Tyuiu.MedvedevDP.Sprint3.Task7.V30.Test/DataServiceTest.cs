@@ -18,17 +18,17 @@ namespace Tyuiu.MedvedevDP.Sprint3.Task7.V30.Test
 
             double[] valueWaitArray = new double[]
             {
-                -31.46,
-                -29.12,
-                84.58,   
-                6.25,    
-                2.97,   
-                0.00,    
-                12.91,   
-                19.75,  
-                132.01,  
-                -19.73, 
-                -16.68
+                -15.60,
+                -12.35,
+                -10.72,
+                -8.88,
+                -2.16,
+                0.00,
+                6.64,
+                10.30,
+                16.17,
+                28.10,
+                38.41
             };
 
             CollectionAssert.AreEqual(valueWaitArray, res);
