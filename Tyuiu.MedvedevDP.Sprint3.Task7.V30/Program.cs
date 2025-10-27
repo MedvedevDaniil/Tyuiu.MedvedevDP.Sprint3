@@ -38,7 +38,7 @@ internal class Program
         for (int i = 0; i < resultArray.Length; i++)
         {
             int x = startValue + i;
-            Console.WriteLine($"| {x,3} | {resultArray[i],6:F2} |");
+            Console.WriteLine($"| {x} | {resultArray[i]} |");
         }
 
         Console.WriteLine("+-----+--------+");
