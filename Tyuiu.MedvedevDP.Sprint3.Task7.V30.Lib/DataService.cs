@@ -12,7 +12,7 @@ namespace Tyuiu.MedvedevDP.Sprint3.Task7.V30.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (Math.Sin(x) == 0)
+                if (Math.Sin(x)+2 == 0)
                 {
                     y = 0;
                 }
