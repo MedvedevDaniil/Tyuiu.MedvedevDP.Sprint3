@@ -1,15 +1,15 @@
-﻿using Tyuiu.MedvedevDP.Sprint3.Task6.V20.Lib;
+﻿using Tyuiu.MedvedevDP.Sprint3.Task7.V30.Lib;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.Title = "Спринт #3 | Task 6 | Вариант 20";
+        Console.Title = "Спринт #3 | Task 7 | Вариант 30";
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #3                                                               *");
         Console.WriteLine("* Тема: Цикл for + операторы if                                           *");
-        Console.WriteLine("* Задание #6                                                              *");
-        Console.WriteLine("* Вариант #20                                                             *");
+        Console.WriteLine("* Задание #7                                                              *");
+        Console.WriteLine("* Вариант #30                                                             *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine();
 
@@ -19,20 +19,29 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        int startValue = 20;
-        int stopValue = 32;
+        int startValue = -5;
+        int stopValue = 5;
 
-        Console.WriteLine($"Начало отрезка = {startValue}");
-        Console.WriteLine($"Конец отрезка = {stopValue}");
+        Console.WriteLine($"Начало диапазона = {startValue}");
+        Console.WriteLine($"Конец диапазона = {stopValue}");
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        int result = ds.GetSumTheDivisors(startValue, stopValue);
+        double[] resultArray = ds.GetMassFunction(startValue, stopValue);
 
-        Console.WriteLine($"Количество делителей (меньших 12) = {result}");
+        Console.WriteLine("+-----+--------+");
+        Console.WriteLine("|  X  |  F(X)  |");
+        Console.WriteLine("+-----+--------+");
 
+        for (int i = 0; i < resultArray.Length; i++)
+        {
+            int x = startValue + i;
+            Console.WriteLine($"| {x,3} | {resultArray[i],6:F2} |");
+        }
+
+        Console.WriteLine("+-----+--------+");
         Console.ReadKey();
     }
 }
