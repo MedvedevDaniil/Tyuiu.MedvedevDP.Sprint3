@@ -23,7 +23,7 @@ namespace Tyuiu.MedvedevDP.Sprint3.Task7.V30.Test
                 -10.72,
                 -8.88,
                 -2.16,
-                0.00,
+                3.25,
                 6.64,
                 10.30,
                 16.17,
